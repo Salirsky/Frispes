@@ -153,7 +153,7 @@ header {
     margin-top: 7px;
     margin-bottom: 7px;
     padding: 8px 16px;
-    background-image: url(/images/arrow.svg);
+    background-image: url(images/arrow.svg);
     background-size: 21px 16px;
     background-repeat: no-repeat;
     background-position: 317px center;
@@ -256,7 +256,7 @@ header {
     bottom: 0;
     left:0;
     background-color: #FF5722;
-    background-image: url(/images/arrow-btn.svg);
+    background-image: url(images/arrow-btn.svg);
     background-size: 15px 21px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -285,7 +285,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    background-image: url(/images/Mask-Group.svg);
+    background-image: url(images/Mask-Group.svg);
     background-size: 90px 90px;
     background-repeat: no-repeat; 
     background-position: 94% 16px;
@@ -327,7 +327,7 @@ header {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    background-image: url(/images/arrow-btn.svg);
+    background-image: url(images/arrow-btn.svg);
     background-size: 15px 21px;
     background-repeat: no-repeat;
     background-position: 220px center;
