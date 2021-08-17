@@ -153,7 +153,7 @@ header {
     margin-top: 7px;
     margin-bottom: 7px;
     padding: 8px 16px;
-    background-image: url(images/arrow.svg);
+    background-image: url(/images/arrow.svg);
     background-size: 21px 16px;
     background-repeat: no-repeat;
     background-position: 317px center;
@@ -256,7 +256,7 @@ header {
     bottom: 0;
     left:0;
     background-color: #FF5722;
-    background-image: url(images/arrow-btn.svg);
+    background-image: url(/images/arrow-btn.svg);
     background-size: 15px 21px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -285,7 +285,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    background-image: url(images/Mask-Group.svg);
+    background-image: url(/images/Mask-Group.svg);
     background-size: 90px 90px;
     background-repeat: no-repeat; 
     background-position: 94% 16px;
@@ -321,16 +321,127 @@ header {
     bottom: 0;
     left: 0;
     background-color: #FF5722;
-    padding: 25px 74px 25px 54px;
+    padding: 22px 74px 22px 54px;
     color:#FFFFFF;
     text-decoration: none;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    background-image: url(images/arrow-btn.svg);
+    background-image: url(/images/arrow-btn.svg);
     background-size: 15px 21px;
     background-repeat: no-repeat;
     background-position: 220px center;
     
 }
 
+.page-about {
+    margin-bottom: 112px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* fr - единица измерения использующаяся только в grid */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:    "rooms events sidebar sidebar"
+                            "countries wifi sidebar sidebar"
+                            "startup communities sidebar sidebar";
+}
+._rooms {
+    grid-area: rooms;
+}
+._events {
+    grid-area: events;
+}
+._countries {
+    grid-area: countries;
+}
+._wifi {
+    grid-area: wifi;
+}
+._startup {
+    grid-area: startup;
+}
+._communities {
+    grid-area: communities;
+}
+._sidebar {
+    grid-area: sidebar;
+    background-color: #10375C;
+    padding: 25px;
+    color:#FFFFFF;
+}
+.about .subtitle,
+.about .title-h2 {
+    color:#FFFFFF;
+}
+.about .subtitle::after {  
+    background-color: #FFFFFF;
+}
+
+.about-item__h3 {
+    color: #9A9A9A;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-left: 56px;
+    position: relative;
+}
+.about-item__h3::before {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background-position: center center;
+}
+._rooms .about-item__h3::before {
+    background-image: url(/images/icon-01.svg);
+}
+._events .about-item__h3::before {
+    background-image: url(/images/icon-02.svg);
+}
+._countries .about-item__h3::before { 
+    background-image: url(/images/icon-03.svg);
+}
+._wifi .about-item__h3::before {
+    background-image: url(/images/icon-04.svg);
+}
+._startup .about-item__h3::before {
+    background-image: url(/images/icon-05.svg);
+}
+._communities .about-item__h3::before {
+    background-image: url(/images/icon-06.svg);
+}
+.about-item__h3 span {
+    display: block; 
+    color: #10375C;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+}
+.users {
+    margin-bottom: 96px;
+}
+.users-title {
+    text-align: center;
+}
+.users-title__text {
+    color: #9A9A9A;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+.users-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 56px;
+}   
+.page-answer .title-h2 {
+    width: 578px;
+    text-align: center;
+    margin: 0 auto;
+}
