@@ -613,6 +613,7 @@ header {
     width: 56px;
     height: 56px;
     padding-right: 23px;
+    
 }
 
 .autor-name {
@@ -643,6 +644,83 @@ header {
     padding-top: 4px;
     
 }
+.blog-item-img-cover {
+    width: 350px;
+    height: 204px;
+    position: relative;
+    overflow: hidden; /* Обрезает всё лишнее */
+}
+.blog-img {
+    width: 100%;
+    height: 204px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%); /* Эта и ещё три строки над ней - Устанавливаем картинку по центру */
+    object-fit: cover; /* Так картинка сохранит свои пропорции */
+}
+.page-member {
+    background-color: #10375C;
+    color: #FFFFFF;
+    height: 452px;
+}
+.member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.member-item-1 {
+    width: 445px;
+}
+.member .title-h2, .subtitle {
+    color:#FFFFFF;
+}
+.member .subtitle::after {  
+    background-color: #FFFFFF;
+}
+
+.member__btn {
+background-color: #FF5722;
+    border: none;
+    text-decoration: none;
+    color:#FFFFFF;
+    padding: 12.5px 114px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    width: 350px;
+    height: 53px;
+}
+
+.member-item__img {
+    position: relative;
+    width: 373px;
+    height: 452px;
+    overflow: hidden; /* Обрезает всё лишнее */
+}
+.member-svg {
+    position: absolute;
+    width: 373px;
+    object-fit: cover; /* Так картинка сохранит свои пропорции */
+    left: 0px;
+    top: 0px;
+    
+}
+.member-png {
+    position: absolute;
+    width: 335px;
+    object-fit: cover; /* Так картинка сохранит свои пропорции */
+    left: 42px;
+    top: -51px;
+}
+
+footer {
+    background-color: #0D2C4A;
+    height: 408px;
+}
+
+
 
 
 
