@@ -155,7 +155,7 @@ header {
     margin-top: 7px;
     margin-bottom: 7px;
     padding: 8px 16px;
-    background-image: url(/images/arrow.svg);
+    background-image: url(images/arrow.svg);
     background-size: 21px 16px;
     background-repeat: no-repeat;
     background-position: 317px center;
@@ -240,7 +240,7 @@ header {
 }
 .link-arrow::after {
     content: '';
-    background-image: url(/images/questions-arrow.svg);
+    background-image: url(images/questions-arrow.svg);
     background-size: 13px 11px;
     display: inline-block;
     width: 11px;
@@ -292,7 +292,7 @@ header {
     bottom: 0;
     left:0;
     background-color: #FF5722;
-    background-image: url(/images/arrow-btn.svg);
+    background-image: url(images/arrow-btn.svg);
     background-size: 15px 21px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -321,7 +321,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    background-image: url(/images/Mask-Group.svg);
+    background-image: url(images/Mask-Group.svg);
     background-size: 90px 90px;
     background-repeat: no-repeat; 
     background-position: 94% 16px;
@@ -363,7 +363,7 @@ header {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    background-image: url(/images/arrow-btn.svg);
+    background-image: url(images/arrow-btn.svg);
     background-size: 15px 21px;
     background-repeat: no-repeat;
     background-position: 220px center;
@@ -439,22 +439,22 @@ header {
     background-position: center center;
 }
 ._rooms .about-item__h3::before {
-    background-image: url(/images/icon-01.svg);
+    background-image: url(images/icon-01.svg);
 }
 ._events .about-item__h3::before {
-    background-image: url(/images/icon-02.svg);
+    background-image: url(images/icon-02.svg);
 }
 ._countries .about-item__h3::before { 
-    background-image: url(/images/icon-03.svg);
+    background-image: url(images/icon-03.svg);
 }
 ._wifi .about-item__h3::before {
-    background-image: url(/images/icon-04.svg);
+    background-image: url(images/icon-04.svg);
 }
 ._startup .about-item__h3::before {
-    background-image: url(/images/icon-05.svg);
+    background-image: url(images/icon-05.svg);
 }
 ._communities .about-item__h3::before {
-    background-image: url(/images/icon-06.svg);
+    background-image: url(images/icon-06.svg);
 }
 .about-item__h3 span {
     display: block; 
@@ -527,7 +527,7 @@ header {
     background-color: #FF5722;
     bottom: -24px;
     left: 143px;
-    background-image: url(/images/answer-arrow.svg);
+    background-image: url(images/answer-arrow.svg);
     background-size: 12px 9px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -540,7 +540,7 @@ header {
 }
 .answer-item:hover .answer-item__link {
     background-color: #FFFFFF;
-    background-image: url(/images/answer-arrow-hover.svg);
+    background-image: url(images/answer-arrow-hover.svg);
     filter: drop-shadow(0px 4px 12px rgba(221, 44, 0, 0.24));
     transition: .3s ease all;
 }
