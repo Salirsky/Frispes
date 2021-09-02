@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frispes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+</head>
+
 </head>
 <body>
     <header>    
@@ -197,44 +200,51 @@
                         <div class="author">
                             <img class="author-avatar" src="/images/blog/main-avatar.png" alt="">
                             <div class="name-position">
-                                <p class="autor-name">Sundar pichai</p>
-                                <p class="autor-position description">CEO at Google</p>
+                                <a class="autor-name" href="#">Sundar pichai</a>
+                                <a class="blog-author" href="#">CEO at Google</a>
                             </div>    
                         </div>
                     </div>    
                 </div>
                 <div class="blog-item">
-                    <img class="blog-img" src="/images/blog/blog-02.png" alt="">
+                    <div class="blog-item-img-cover">
+                        <img class="blog-img" src="/images/blog/blog-02.png" alt="">
+                    </div>    
                     <div class="blog-item-text">
-                        <p class="blog-item-h6">Minimal workspace for inspirations</p>
-                        <p class="blog-item-text-description"">Anthony Masional</p>
+                        <a class="blog-link" href="#">Minimal workspace for inspirations</a>
+                        <a class="blog-author" href="#">Anthony Masional</a>
                     </div>    
                 </div>
 
                 <div class="blog-item">
-                    <img class="blog-img" src="/images/blog/blog-03.png" alt="">
+                    <div class="blog-item-img-cover">
+                        <img class="blog-img" src="/images/blog/blog-03.png" alt="">
+                    </div>    
                     <div class="blog-item-text">
-                        <p class="blog-item-h6">Does productivity increase when working remotely ? </p>
-                        <p class="blog-item-text-description"">Franck Martin</p>
+                        <a class="blog-link" href="#">Does productivity increase when working remotely ? </a>
+                        <a class="blog-author" href="#">Franck Martin</a>
                     </div>
                 </div>
                 
                 <div class="blog-item">
-                    <img class="blog-img" src="/images/blog/blog-04.png" alt="">
+                    <div class="blog-item-img-cover">
+                        <img class="blog-img" src="/images/blog/blog-04.png" alt="">
+                    </div>    
                     <div class="blog-item-text">
-                        <p class="blog-item-h6">Morning routine to boost your mood</p>
-                        <p class="blog-item-text-description"">Elizabeth Swan</p>
+                        <a class="blog-link" href="#">Morning routine to boost your mood</a>
+                        <a class="blog-author" href="#">Elizabeth Swan</a>
                     </div>    
                 </div>
                 
                 <div class="blog-item">
-                    <img class="blog-img" src="/images/blog/blog-05.png" alt="">
+                    <div class="blog-item-img-cover">
+                        <img class="blog-img" src="/images/blog/blog-05.png" alt="">
+                    </div>    
                     <div class="blog-item-text">
-                        <p class="blog-item-h6">5+ tips to find comfortable co-working space</p>
-                        <p class="blog-item-text-description">Mykola Ilschenko</p>
+                        <a class="blog-link" href="#">5+ tips to find comfortable co-working space</a>
+                        <a class="blog-author" href="#">Mykola Ilschenko</a>
                     </div>    
                 </div>
-                
             </div>
         </div> 
     </section>
@@ -252,9 +262,97 @@
                     <img class="member-png" src="images/member.png" alt ="smiling man :)">
                 </div>
             </div>
-
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-item">
+                    <a href="#" class="footer-logo"><img src="images/Logo-footer.svg" alt="Logo"></a>
+                    <p class="footer-item__text">We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your best workspaces and meetings</p>
+                    <ul class="footer-social">
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__link">
+                                <img class="footer-social__img" src="images/social-networks/Instagram.svg" alt="Instagram">
+                            </a>
+                        </li>
+                        <li  class="footer-social__item">
+                            <a href="" class="footer-social__link">
+                                <img class="footer-social__img" src="images/social-networks/YouTube.svg" alt="YouTube">
+                            </a>
+                        </li>
+                        <li  class="footer-social__item">
+                            <a href="" class="footer-social__link">
+                                <img class="footer-social__img" src="images/social-networks/Facebook.svg" alt="Facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li class="footer-list__title">Spaces</li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Co-working spaces</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Meeting rooms</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Event spaces</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Child playground</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Cafe & resto</a>
+                        </li>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li class="footer-list__title">Company</li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">About us</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Pricing</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Careers</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Press</a>
+                        </li>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li class="footer-list__title">Support</li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">FAQs</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <a class="footer-list__link" href="#">Help</a>
+                        </li>
+                </div>
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li class="footer-list__title">Contact Us</li>
+                        <li class="footer-list__item">
+                            <p>E. Hello@frispes.com</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <p>A. Jalan Jayakatwang  No.301
+                                Ngasem, Kediri</p>
+                        </li>
+                        <li class="footer-list__item">
+                            <p>P. (+62) 82334670000</p>
+                        </li>
+                        
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
