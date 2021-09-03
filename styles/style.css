@@ -721,6 +721,22 @@ background-color: #FF5722;
     font-weight: 700;
     width: 350px;
     height: 53px;
+    transition: .3s ease all;
+}
+.member__btn:hover {
+    background-color: #FFFFFF;
+    color:#FF5722;
+    transition: .3s ease all;
+    font-size: 20px;
+}
+.btn {
+    transition: .3s ease all;
+}
+.btn:hover {
+    background-color: #FFFFFF;
+    color:#FF5722;
+    transition: .3s ease all;
+    font-size: 20px;
 }
 
 .member-item__img {
