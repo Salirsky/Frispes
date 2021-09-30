@@ -94,7 +94,6 @@ header {
     font-size: 52px;
     font-weight: 700;
     line-height: 67.96px;
-
 }
 .title__h1 span {    
     color: #DD2C00;
@@ -219,7 +218,7 @@ header {
 .link-arrow::after {
     content: '';
     background-image: url(../images/questions-arrow.svg);
-    background-size: 7px 5px;
+    background-size: 10px 19px;
     display: inline-block;
     width: 11px;
     height: 13px;
@@ -238,11 +237,12 @@ header {
 .spaces {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 98px;
 }
 .spaces-item {
     flex: 0 0 32%;
     position: relative;
-    margin-bottom: 107px;
+
 }
 .spaces-cover {
     width: 100%;
@@ -337,9 +337,6 @@ header {
     background-repeat: no-repeat;
     background-position: 220px center;   
 }
-.page-about {
-    margin-bottom: 112px;
-}
 .about {
     display: grid;
     align-items: center;
@@ -370,27 +367,39 @@ header {
 ._sidebar {
     grid-area: sidebar;
     background-color: #10375C;
-    padding: 25px;
+    padding: 60px;
     color:#FFFFFF;
-    /* width: 520px;*/
-    height: 370px; 
 }
 .about .subtitle,
 .about .title-h2 {
     color:#FFFFFF;
 }
+.about .subtitle {
+    padding: 0;
+    margin: 0;
+}
 .about .subtitle::after {  
     background-color: #FFFFFF;
 }
 .about .title-h2 {
-    margin-top: 0;
+    margin: 15px 0 27px 0;
+    line-height: 1.2;
+
+}
+.about-item__text {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    line-height: 1.526;
+    padding: 0;
+    margin: 0;
 }
 .about-item__h3 {
     color: #9A9A9A;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    padding-left: 56px;
+    padding-left: 65px;
     position: relative;
 }
 .about-item__h3::before {
@@ -403,6 +412,7 @@ header {
     left: 0;
     top: 4px;
     background-position: center center;
+    padding-left: 12px;
 }
 ._rooms .about-item__h3::before {
     background-image: url(../images/icon-01.svg);
@@ -430,7 +440,7 @@ header {
     font-family: 'Lora', serif;
 }
 .users {
-    margin: 112px 0 96px 0;
+    margin: 105px 0 0 0;
 }
 .users-title {
     text-align: center;
@@ -440,6 +450,7 @@ header {
     font-size: 18px;
     font-weight: 500;
     font-family: 'Lato', sans-serif;
+    margin: 30px 0 0 0;
 }
 .users-items {
     display: flex;
@@ -449,18 +460,18 @@ header {
     width: 1176px;
 }   
 .page-answer {
-    margin-bottom: 35px;
+    margin: 94px 0 42px 0;
 }
 .page-answer .title-h2 {
     width: 578px;
     text-align: center;
     margin: 0 auto;
+    line-height: 1.2;
 }
 .answers {
-    margin-top: 54px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin: 29px 0 73px 0;
 }
 .answer-item {
     position: relative;
@@ -489,7 +500,7 @@ header {
     bottom: -24px;
     left: 143px;
     background-image: url(../images/answer-arrow.svg);
-    background-size: 12px 9px;
+    background-size: 17px 17px;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -506,8 +517,7 @@ header {
 }
 .page-blog {
     background-color: #F8F8F8;
-    padding-top: 60px;
-    padding-bottom: 96px;
+    padding: 62px 0 96px 0;
 }
 .page-blog-head {
     display: flex;
