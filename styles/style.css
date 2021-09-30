@@ -529,7 +529,7 @@ header {
     flex-grow: 1;
 }
 .blog {
-    margin-top: 56px;
+    margin-top: 58px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px; /*пространство межжду ячейками*/
@@ -565,12 +565,14 @@ header {
     align-items: center;
     flex-basis: 45%;
 }
-.title-h3 {
+.blog .title-h3 {
     color: #222831;
     font-size: 32px;
     font-weight: 700;
     font-family: 'Lora', serif;
+    line-height: 1.3;
     margin: 0;
+    
 }
 .blog-main-text {
     line-height: 26px;
@@ -641,16 +643,31 @@ header {
     align-items: center;   
 }
 .member-item-1 {
+    padding-bottom: 20px;
     width: 445px;
 }
 .member .title-h2, .member .subtitle {
     color:#FFFFFF;
 }
+.member .subtitle {
+    margin: 0;
+}
+.member .title-h2 {
+    line-height: 1.3;
+    margin: 11px 0 15px 0;
+}
 .member .subtitle::after {  
     background-color: #FFFFFF;
 }
+.member-item__text {
+    margin: 16px 0 50px 0;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
 .member__btn {
-background-color: #FF5722;
+    background-color: #FF5722;
     border: none;
     text-decoration: none;
     color:#FFFFFF;
@@ -696,14 +713,6 @@ background-color: #FF5722;
     object-fit: cover; /* Так картинка сохранит свои пропорции */
     left: 42px;
     top: -51px;
-}
-.member-item__text {
-    margin-top: 16px;
-    margin-bottom: 33px;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    line-height: 30px;
 }
 footer {
     background-color: #0D2C4A;
