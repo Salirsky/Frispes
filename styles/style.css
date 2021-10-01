@@ -242,7 +242,6 @@ header {
 .spaces-item {
     flex: 0 0 32%;
     position: relative;
-
 }
 .spaces-cover {
     width: 100%;
@@ -693,7 +692,6 @@ header {
     background-color: #FFFFFF;
     color:#FF5722;
     transition: .3s ease all;
-    /* font-size: 20px; */
 }
 .member-item__img {
     position: relative;
@@ -726,7 +724,6 @@ footer {
     grid-template-columns: 1fr 140px 90px 100px 220px;
     gap: 57px;
 }
-
 .footer-item__text {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
