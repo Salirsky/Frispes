@@ -7,6 +7,7 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
+    padding: 0 15px;
 }
 header {
     display: flex;
@@ -14,7 +15,8 @@ header {
     align-items: center; /* Центрирование элементов внутри родительского блока по горизонтальной оси */
     max-width: 1100px;
     margin: 61px auto 0;
-    font-family: 'Lato', sans-serif;   
+    font-family: 'Lato', sans-serif; 
+    padding: 0 15px;  
 }
 .nav { 
     display: flex;
@@ -94,6 +96,7 @@ header {
     font-size: 52px;
     font-weight: 700;
     line-height: 67.96px;
+    padding: 0 40px 0 0;
 }
 .title__h1 span {    
     color: #DD2C00;
@@ -171,7 +174,7 @@ header {
 .form_select:active {
     border:none;
 }
-.img-bg-main {
+.page-main__img {
     position: absolute;
     right: -173px;
     top: 257px;
@@ -180,6 +183,9 @@ header {
     width: 960px;
     height: 598.05px;
     object-fit: cover;
+    /* bottom: 0;
+    right: 0;
+    width: 92%; */
 }
 .page-space {
     margin-top: 166px;
@@ -242,6 +248,7 @@ header {
 .spaces-item {
     flex: 0 0 32%;
     position: relative;
+
 }
 .spaces-cover {
     width: 100%;
@@ -450,13 +457,15 @@ header {
     font-weight: 500;
     font-family: 'Lato', sans-serif;
     margin: 30px 0 0 0;
+    padding: 0 15px;
 }
-.users-items {
+.company {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1175px;
     margin: 58px auto 0;
-    width: 1176px;
+
 }   
 .page-answer {
     margin: 94px 0 42px 0;
@@ -692,6 +701,7 @@ header {
     background-color: #FFFFFF;
     color:#FF5722;
     transition: .3s ease all;
+    /* font-size: 20px; */
 }
 .member-item__img {
     position: relative;
@@ -717,6 +727,7 @@ header {
 footer {
     background-color: #0D2C4A;
     color: #FFFFFF;  
+    
 }
 .footer {
     padding: 69px 0 100px 0;
@@ -724,6 +735,7 @@ footer {
     grid-template-columns: 1fr 140px 90px 100px 220px;
     gap: 57px;
 }
+
 .footer-item__text {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
@@ -766,6 +778,10 @@ footer {
 }
 li.footer-list__item {
     margin-bottom: 11px;
+}
+
+@media (max-vidth: 992px) {
+
 }
 
 
