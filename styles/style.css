@@ -585,6 +585,7 @@ header {
 .blog-main-text {
     line-height: 26px;
     margin: 22px 0 18px 0;
+    /* padding: 10px 33px; */
 }
 .author {
     display: inline-flex;
@@ -733,7 +734,7 @@ footer {
     padding: 69px 0 100px 0;
     display: grid;
     grid-template-columns: 1fr 140px 90px 100px 220px;
-    gap: 57px;
+    gap: 5%;
 }
 
 .footer-item__text {
@@ -780,10 +781,32 @@ li.footer-list__item {
     margin-bottom: 11px;
 }
 
-@media (max-vidth: 992px) {
-
+@media (max-width: 992px) {
+    .nav__item {
+        margin: 0 10px;
+    }
+    .title {
+        flex-direction: column;
+    }
+    .title__text {    
+        flex: 0 0 auto;
+    }
+    .page-main__img {
+        width: 92%; 
+    }
+    .company-item {
+        flex: 0 0 12%;
+    }
+    .company img {
+        width: 100%
+    }
 }
-
+@media (max-width: 870px) {
+    nav, 
+    .control {
+        display: none;
+    }
+}
 
 
 
