@@ -780,6 +780,11 @@ footer {
 li.footer-list__item {
     margin-bottom: 11px;
 }
+@media (min-width: 871px) {
+    .menu {
+        display: none;
+    }
+}
 
 @media (max-width: 992px) {
     .nav__item {
@@ -800,15 +805,37 @@ li.footer-list__item {
     .company img {
         width: 100%
     }
+
 }
+
 @media (max-width: 870px) {
     nav, 
     .control {
         display: none;
     }
+    .menu {
+        background-color: #FFFFFF;
+        border: 1px solid transparent;
+        padding: 13px 11px;
+        border-radius: 100%;
+        transition: .3s ease all;
+        cursor: pointer;
+    }
+    .menu-item {
+        display: block;
+        width: 29px;
+        height: 2px;
+        background-color: #10375C;
+        margin-bottom: 8px;
+    }
+    .menu-item:last-child {
+        margin-bottom: 0;
+    }
+    .menu:hover {
+        border: 1px solid #10375C;
+        transition: .3s ease all;
+    }
+    header {
+        margin: 30px auto;
+    }
 }
-
-
-
-
-
