@@ -445,13 +445,13 @@ header {
     font-weight: 400;
     font-family: 'Lora', serif;
 }
-.users {
+.page-company {
     margin: 105px 0 0 0;
 }
-.users-title {
+.company-title {
     text-align: center;
 }
-.users-title__text {
+.company-title__text {
     color: #9A9A9A;
     font-size: 18px;
     font-weight: 500;
@@ -465,7 +465,6 @@ header {
     align-items: center;
     max-width: 1175px;
     margin: 58px auto 0;
-
 }   
 .page-answer {
     margin: 94px 0 42px 0;
@@ -856,6 +855,16 @@ li.footer-list__item {
     .about-item._sidebar {
         padding: 36px 61px;
     }  
+    .company {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .company-item {
+        flex: 0 0 32%;
+    }
+    .company__img {    
+        max-width: 150px;
+    }
 }
 
 
