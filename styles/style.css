@@ -491,17 +491,7 @@ header {
     color: #000000;
     transition: .3s ease all;
 }
-/* .answer-item__box {
-    display: block;
-    width: 350px;
-    height: 171px;
-    background-color: #FFFFFF;
-    filter: drop-shadow(0px 4px 12px rgba(223, 223, 223, 0.5));
-    color: #000000;
-    font-size: 26px;
-    font-weight: 400;
-    font-family: 'Lora', serif;   
-} */
+
 .answer__text {
     font-size: 26px;
     font-weight: 400;
@@ -524,7 +514,7 @@ header {
     margin: 0 auto;
     transition: .3s ease all;
 }
-.answer-item:hover .answer__text {
+.answer-item:hover  {
     background-color: #FF5722;
     color: #FFFFFF;
     transition: .3s ease all;
@@ -922,6 +912,7 @@ li.footer-list__item {
     .title-h2 {
         font-size: 20px;
     }
+
 }
 
 
