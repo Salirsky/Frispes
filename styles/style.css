@@ -469,7 +469,7 @@ header {
     margin: 58px auto 0;
 }   
 .page-answer {
-    Padding: 92px 0 35px 0;
+    Padding: 92px 0 43px 0;
     text-align: center;
     line-height: 1.3;
 }
@@ -913,4 +913,8 @@ li.footer-list__item {
     .title-h2 {
         font-size: 20px;
     }
+
 }
+
+
+
