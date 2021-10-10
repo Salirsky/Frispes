@@ -221,15 +221,16 @@ header {
     font-family: 'Lato', sans-serif;
     position: relative;
     text-decoration: none;
-    margin: 0 0 0 0;    
+    margin: 0 0 0 0;
+        
 }
 .link-arrow::after {
     content: '';
     background-image: url(../images/questions-arrow.svg);
     background-size: 10px 19px;
     display: inline-block;
-    width: 11px;
-    height: 13px;
+    width: 12px;
+    height: 16px;
     background-repeat: no-repeat;
     background-position:  center;
     margin-left: 15px;
@@ -449,6 +450,7 @@ header {
 }
 .page-company {
     margin: 113px 0 0 0;
+    text-align: center;
 }
 .company-title {
     text-align: center;
@@ -467,6 +469,8 @@ header {
     align-items: center;
     max-width: 1175px;
     margin: 58px auto 0;
+    padding-left: 15px;
+    padding-right: 15px;  
 }   
 .page-answer {
     Padding: 92px 0 43px 0;
@@ -789,9 +793,22 @@ footer {
 li.footer-list__item {
     margin-bottom: 11px;
 }
+
 @media (min-width: 871px) {
     .menu {
         display: none;
+    }
+}
+
+@media (max-width: 955px) {
+    .blog-text__link { 
+        font-size: 25px;
+    }
+    .blog-link {
+        font-size: 18px;    
+    }
+    .blog-author_description {
+        font-size: 14px;     
     }
 }
 
@@ -892,6 +909,9 @@ li.footer-list__item {
     .blog-text {
         padding: 20px 33px;
     }
+    .title-h2 {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -913,7 +933,22 @@ li.footer-list__item {
     .title-h2 {
         font-size: 20px;
     }
-
+    ._main {
+        grid-column: 1 / 2;
+    }
+    .blog-text_description {
+        display: none;
+    }
+    .blog-author {
+        padding-top: 30px;
+    }
+    .company__img {
+        max-width: 120px;
+    }
+    .company-item {
+        flex: 0 0 48%;
+        margin: 20px 0;
+    }
 }
 
 
