@@ -821,9 +821,9 @@ li.footer-list__item {
     .title__h1 {
         padding-right: 0;
     }
-    .title__text {    
+    .title__text {
         flex: 0 0 auto;
-        padding: 25px 0 30px 0;
+        padding: 25px 0 65px 0;
     }
     .page-main__img {
         width: 92%; 
@@ -928,12 +928,25 @@ li.footer-list__item {
     }
     .title__text {
         font-size: 13px;
+        padding: 25px 0 0px 0;
     }
     .form__h2 {
         font-size: 22px;
     }
     .form {
         padding: 20px 15px;
+    }
+    .form__select, .form-item__label {
+        font-size: 14px;
+    }
+    .form__btn {
+        font-size: 15px;
+    }
+    .page-main__img {
+        display: none;
+    }
+    .page-main {
+        padding-bottom: 0;
     }
     .title-h2 {
         font-size: 20px;
@@ -954,8 +967,22 @@ li.footer-list__item {
         flex: 0 0 48%;
         margin: 20px 0;
     }
+    .about-item__h3::before {
+        display: none;  
+    }
+    .about-item__h3 {
+        padding-left: 35px;
+        margin: 10px auto 20px auto;
+    }
+    .page-company {
+        margin: 75px 0 0 0;
+    }
 }    
     @media (max-width: 768px) {
+
+    .page-main__img {
+        width: 84%;
+    }    
     .page-space-head {
         flex-direction: column;
         text-align: center;
@@ -980,5 +1007,13 @@ li.footer-list__item {
     .spaces-cover {
         height: 260px;
     }
+    .help-item {
+        padding: 30px 25px 50px;
+    }
+    .help__title {
+        font-size: 20px;
+    }
+
+    
 
 }
