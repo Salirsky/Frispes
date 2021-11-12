@@ -790,6 +790,21 @@ footer {
 li.footer-list__item {
     margin-bottom: 11px;
 }
+.menu {
+   background-color: #FFFFFF;
+   border: 1px solid transparent;
+   padding: 13px 11px;
+   border-radius: 100%;
+   transition: .2s ease border;
+   cursor: pointer;
+}
+.menu-item {
+   display: block;
+   width: 29px;
+   height: 2px;
+   background-color: #10375C;
+   margin-bottom: 8px;
+}
 
 @media (min-width: 871px) {
     .menu {
