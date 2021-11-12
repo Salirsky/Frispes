@@ -805,6 +805,12 @@ li.footer-list__item {
    background-color: #10375C;
    margin-bottom: 8px;
 }
+.menu-item:last-child {
+   margin-bottom: 0;
+}
+.menu:hover {
+   border: 1px solid #10375C;
+}
 
 @media (min-width: 871px) {
     .menu {
