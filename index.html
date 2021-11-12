@@ -25,7 +25,7 @@
             <li class="control__item"><a class="control__link" href="#">Log in</a></li>
             <li class="control__item"><a class="control__link control__link-bg" href="#">Sign Up</a></li>
         </ul>
-        <button class="menu" type="button">
+        <button class="menu" type="button" data-modal-target="#modal">
             <span class="menu-item"></span>
             <span class="menu-item"></span>
             <span class="menu-item"></span>
@@ -367,5 +367,21 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <button data-close-button class="close-button">&times;</button>
+        <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Workspace</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Service</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Events</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Reviews</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
+        </ul>
+        <ul class="control">
+            <li class="control__item"><a class="control__link" href="#">Log In</a></li>
+            <li class="control__item"><a class="control__link control__link-bg" href="#">Sign Up</a></li>
+        </ul>
+    </div>
+    <div id="overlay"></div>
 </body>
 </html>
