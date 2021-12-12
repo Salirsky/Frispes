@@ -790,8 +790,6 @@ footer {
 li.footer-list__item {
     margin-bottom: 11px;
 }
-
-
 .menu {
     background-color: #FFFFFF;
     border: 1px solid transparent;
@@ -822,7 +820,6 @@ li.footer-list__item {
      border-radius: 10px;
      z-index: 10;
      background-color: white;
-     width: 500px;
      max-width: 80%;
      padding: 30px 20px;
  }
@@ -830,6 +827,8 @@ li.footer-list__item {
      transform: translate(-50%, -50%) scale(1);
  }
  .modal .close-button {
+    transition: .3s ease all;
+    color: #222831;
      cursor: pointer;
      border: none;
      outline: none;
@@ -840,6 +839,11 @@ li.footer-list__item {
      padding: 0;
      right: 11px;
      top: 0;
+ }
+ .modal .close-button:hover {
+     color: #FF5722;
+     transition: .3s ease all;
+
  }
  .modal-body {
      padding: 10px 15px;
