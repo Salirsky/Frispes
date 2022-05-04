@@ -29,12 +29,12 @@ header {
     font-weight: 700; 
     font-size: 16px;
     text-decoration: none;
-    transition: .2s ease color;
+    transition: .3s ease color;
    
 }
 .nav__link:hover {
     color: #FF5722;
-    transition: .2s ease color;
+    transition: .3s ease color;
 }
 .nav__item {
     margin-left: 20px;
@@ -45,21 +45,22 @@ header {
     color: #FF5722;
     font-weight: 700;
     text-decoration: none;
-    transition: .2s ease color;
+    transition: .3s ease all;
 }
 .control__link:hover {
     color:#10375C;
+    transition: .3s ease all;
 }
 .control__link-bg {
     background-color: #FF5722;
     color: #FFFFFF;
-    transition: .2s ease all;
+    transition: .3s ease all;
     box-shadow: 0 4px 16px rgba(255,87,34,0.32);
 }
 .control__link-bg:hover {
     background-color: #10375C;
     color: #FFFFFF;
-    transition: .2s ease all;
+    transition: .3s ease all;
     box-shadow: 0 4px 16px rgba(16,55,92,0.32);
 }
 .control { 
@@ -786,6 +787,11 @@ footer {
 .footer-list__link {
     color: #FFFFFF;
     text-decoration: none;
+    transition: .3s ease all;
+}
+.footer-list__link:hover {
+    color:#FF5722;
+    transition: .3s ease all;
 }
 li.footer-list__item {
     margin-bottom: 11px;
