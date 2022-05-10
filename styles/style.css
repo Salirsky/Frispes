@@ -528,7 +528,7 @@ header {
     background-color: #FFFFFF;
     background-image: url(../images/answer-arrow-hover.svg);
     filter: drop-shadow(0px 4px 12px rgba(221, 44, 0, 0.24));
-    transition: .3s ease all;
+    transition: .3s cubic-bezier(0.42, 0, 0.58, 1.0) all;
 }
 .page-blog {
     background-color: #F8F8F8;
