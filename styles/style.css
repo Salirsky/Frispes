@@ -222,6 +222,7 @@ header {
     position: relative;
     text-decoration: none;
     margin: 0 0 0 0;
+    transition: all ease .3s;
         
 }
 .link-arrow::after {
@@ -235,6 +236,15 @@ header {
     background-position:  center;
     margin-left: 15px;
     vertical-align: middle;
+    transition: all ease .3s;
+}
+.link-arrow:hover {
+    color: #10375C;
+    transition: all ease .3s;
+}
+.link-arrow:hover::after {
+    background-image: url(../images/questions-arrow-hover.svg);
+    transition: all ease .3s;
 }
 .description {
     color: #9A9A9A;
