@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/burger.js" defer ></script>
     <title>Frispes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -14,12 +13,12 @@
         <a href="#" class="logo"><img class="logo__img" src="images/logo.svg" alt="" /></a>
         <nav>  <!-- семантический тег, обозначающий навигацию. Используется один раз. --> 
             <ul class="nav">    
-                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Workspace</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Service</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Events</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Reviews</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#workspace">Workspace</a></li>
+                <li class="nav__item"><a class="nav__link" href="#service">Service</a></li>
+                <li class="nav__item"><a class="nav__link" href="#events">Events</a></li>
+                <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contact Us</a></li>
             </ul>
         </nav>
         <ul class="control">
@@ -34,7 +33,7 @@
     </header>
     <section class="page-main">
         <div class="container">
-            <p class="subtitle">Introducing</p>
+            <p class="subtitle" id="home">Introducing</p>
             <div class="title">
                 <h1 class="title__h1"><span>Revolutionary</span> co-working space to realize your innovation</h1>
                 <p class="title__text">In frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow their opportunities in key local, regional and global markets</p>
@@ -75,7 +74,7 @@
     <section class="page-space">
         <div class="container">
             <div class="page-space-head">
-                <h2 class="title-h2">Our Spaces</h2>
+                <h2 class="title-h2" id="workspace">Our Spaces</h2>
                 <p class="page-space-head__text">Our space is designed to give you a different experience <br> when working with your team or personally</p>
             </div>
             <div class="spaces">
@@ -120,7 +119,7 @@
     </section>
     <section class="page-about">
         <div class="container">
-            <div class="about">
+            <div class="about" id="service">
                 <div class="about-item _rooms">
                     <h3 class="about-item__h3"><span>500+</span>Meeting rooms</h3>
                 </div>
@@ -177,7 +176,7 @@
     </section>
     <section class="page-answer">
         <div class="container">
-            <h2 class='title-h2'>Find the answers to anything you need in our Help Center</h2>
+            <h2 class='title-h2' id="reviews">Find the answers to anything you need in our Help Center</h2>
             <div class="answers">
                 <div class="answer-item">
                    <p class="answer__text">How do I know if a space is available? </p>
@@ -198,7 +197,7 @@
     <section class="page-blog">
         <div class="container">
             <div class="page-blog-head">
-                <h2 class='title-h2'>News, events and insights for you</h2>
+                <h2 class='title-h2' id="events">News, events and insights for you</h2>
                 <a class="link-arrow" href="#">See more</a>
             </div>
             <div class="blog">
@@ -352,7 +351,7 @@
                 </div>
                 <div class="footer-item">
                     <ul class="footer-list">
-                        <li class="footer-list__title">Contact Us</li>
+                        <li class="footer-list__title" id="contact">Contact Us</li>
                         <li class="footer-list__item">
                             <p>E. Hello@frispes.com</p>
                         </li>
@@ -384,5 +383,40 @@
         </ul>
     </div>
     <div id="overlay"></div>
+    
+    <script>
+        const openModalButtons = document.querySelectorAll('[data-modal-target]')
+        const closeModalButtons = document.querySelectorAll('[data-close-button]')
+        const overlay = document.getElementById('overlay')
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = document.querySelector(button.dataset.modalTarget)
+                openModal(modal)
+            })
+        })
+            overlay.addEventListener('click', () => {
+                const modals = document.querySelectorAll('.modal.active')
+                modals.forEach(modal => {
+                closeModal(modal)
+            })
+        })
+        closeModalButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                const modal = button.closest('.modal')
+                closeModal(modal)
+            })
+        })
+        function openModal(modal) {
+            if (modal == null) return
+            modal.classList.add('active')
+            overlay.classList.add('active')
+        }
+        function closeModal(modal) {
+            if (modal == null) return
+            modal.classList.remove('active')
+            overlay.classList.remove('active')
+        }
+    </script>
+    
 </body>
 </html>
