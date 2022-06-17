@@ -1130,6 +1130,9 @@ li.footer-list__item {
     .page-blog-head .title-h2 {
         margin-bottom: 24px;
     }
+        .member__btn {
+            padding: 14.5px 73px;
+        }
 }
 
     @media (max-width: 680px) {
